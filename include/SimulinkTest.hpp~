@@ -1,0 +1,20 @@
+#ifndef SIMULINK_TEST_H_
+#define SIMULINK_TEST_H_
+
+#include "ros/ros.h"
+#include "sensor_msgs/Imu.h"
+#include "simulink_example.h"
+
+class SimulinkTest
+{
+    public:
+        SimulinkTest();
+        ~SimulinkTest();
+    private:
+        void imuCallback(const sensor_msgs::Imu::ConstPtr& msg);
+        ros::NodeHandle nh_;
+        ros::Subscriber sub_;
+        ros::Publisher pub_;
+};
+
+#endif /*SIMULINK_TEST_H_*/

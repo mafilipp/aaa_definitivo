@@ -1,0 +1,34 @@
+#ifndef SIMULINK_MODEL_H_
+#define SIMULINK_MODEL_H_
+
+#include "ros/ros.h"
+#include "sensor_msgs/Imu.h"
+#include "simulink_model.h"
+
+//#include "ssf_core/DoubleArrayStamped.h"
+/*
+#include "ssf_core/eigen_conversions.h"
+#include "sensor_fusion_comm/ExtState.h"
+#include "sensor_fusion_comm/DoubleArrayStamped.h"
+#include "ssf_core/state.h"
+*/
+
+
+
+class SimulinkModel
+{
+    public:
+        SimulinkModel();
+        ~SimulinkModel();
+    private:
+        void imuCallback(aaa_definitivo::DoubleArrayStamped & state); //sensor_fusion_comm/DoubleArrayStamped
+
+
+// originalmente era const sensor_msgs::Imu::ConstPtr& msg.. cosa vuol dire ConstPtr&
+ 
+        ros::NodeHandle nh_;
+        ros::Subscriber sub_state_estimation;
+        ros::Publisher pub_MAVLink;
+};
+
+#endif /*SIMULINK_MODEL_H_*/
