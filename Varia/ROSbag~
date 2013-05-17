@@ -1,0 +1,15 @@
+YAML data file. Defaults to rate mode (10hz). Example usage:
+
+
+
+###############   SLUNG CONTROLLER
+
+
+rostopic pub -f straight_line.bagy /waypoint sl_controller/waypoint
+
+
+
+
+###############   TRAJECTORY CONTROLLER
+
+rostopic pub -f circle.bagy /waypoint trajectory_controller/rosbag record /vicon/puppet_copter/puppet_copter /waypoint /control_message /errors /ext_state /output -o test

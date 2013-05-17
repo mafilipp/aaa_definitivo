@@ -1,0 +1,30 @@
+controller_simulink: {Frequency: 50.0, G_d: 0.0, Load_0_200: 0.0, N_Delay: 0.0, Supply_type: 0,
+  along_pos_K_P: 0.0, along_pos_max_P: 0.21, along_rate_K_D: -0.02, along_rate_K_P: 0.35,
+  along_rate_max_D: 0.15, along_rate_max_P: 0.15, along_rate_max_PD: 0.25, cross_pos_K_P: 0.04,
+  cross_pos_max_P: 0.15, cross_rate_K_D: -0.1, cross_rate_K_P: 0.12, cross_rate_max_D: 0.0,
+  cross_rate_max_P: 0.0275, cross_rate_max_PD: 0.0, init_PID: false, l_L: 0.6, thrust_K_D: 0.0,
+  thrust_K_I: 0.0, thrust_K_P: 100.0, thrust_max_D: 0.0, thrust_max_I: 0.0, thrust_max_P: 0.0,
+  thrust_max_PID: 0.0}
+init: {G_d: 0, along_pos_K_P: 0.6, along_pos_max_P: 0.8, along_rate_K_D: -0.02, along_rate_K_P: 0.35,
+  along_rate_max_D: 20, along_rate_max_P: 20, along_rate_max_PD: 40, cross_pos_K_P: 0.6,
+  cross_pos_max_P: 0.8, cross_rate_K_D: -0.02, cross_rate_K_P: 0.35, cross_rate_max_D: 20,
+  cross_rate_max_P: 20, cross_rate_max_PD: 40, l_L: 0.6, tau_n: 0, thrust_K_D: 50,
+  thrust_K_I: 8, thrust_K_P: 100, thrust_max_D: 40, thrust_max_I: 30, thrust_max_P: 30,
+  thrust_max_PID: 200}
+rosdistro: fuerte
+roslaunch:
+  uris: {host_mafilipp_hp_xw4600_workstation__34946: 'http://mafilipp-HP-xw4600-Workstation:34946/',
+    host_mafilipp_hp_xw4600_workstation__38028: 'http://mafilipp-HP-xw4600-Workstation:38028/',
+    host_mafilipp_hp_xw4600_workstation__40060: 'http://mafilipp-HP-xw4600-Workstation:40060/',
+    host_mafilipp_hp_xw4600_workstation__47654: 'http://mafilipp-HP-xw4600-Workstation:47654/',
+    host_mafilipp_hp_xw4600_workstation__49374: 'http://mafilipp-HP-xw4600-Workstation:49374/',
+    host_mafilipp_hp_xw4600_workstation__49968: 'http://mafilipp-HP-xw4600-Workstation:49968/',
+    host_mafilipp_hp_xw4600_workstation__50928: 'http://mafilipp-HP-xw4600-Workstation:50928/',
+    host_mafilipp_hp_xw4600_workstation__52909: 'http://mafilipp-HP-xw4600-Workstation:52909/',
+    host_mafilipp_hp_xw4600_workstation__53702: 'http://mafilipp-HP-xw4600-Workstation:53702/',
+    host_mafilipp_hp_xw4600_workstation__56940: 'http://mafilipp-HP-xw4600-Workstation:56940/',
+    host_mafilipp_hp_xw4600_workstation__59085: 'http://mafilipp-HP-xw4600-Workstation:59085/',
+    host_mafilipp_hp_xw4600_workstation__59413: 'http://mafilipp-HP-xw4600-Workstation:59413/',
+    host_mafilipp_hp_xw4600_workstation__60051: 'http://mafilipp-HP-xw4600-Workstation:60051/'}
+rosversion: 1.8.11
+run_id: 4bcb4406-b6f4-11e2-92db-0022641748b8

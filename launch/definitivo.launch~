@@ -1,0 +1,10 @@
+<launch>
+
+
+    <node pkg="aaa_definitivo" name="aaa_definitivo" type="aaa_definitivo"/>			
+
+   <node pkg="control_publisher" name="talker" type="control_publisher" />		
+
+
+
+</launch>

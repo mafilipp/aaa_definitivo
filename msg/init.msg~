@@ -1,0 +1,28 @@
+Header    header
+
+
+float64 thrust_K_P
+float64 thrust_K_I
+float64 thrust_K_D
+float64 thrust_max_P
+float64 thrust_max_I
+float64 thrust_max_D
+float64 thrust_max_PID
+
+float64 cross_rate_K_P
+float64 cross_rate_K_D
+float64 cross_rate_max_P
+float64 cross_rate_max_D
+float64 cross_rate_max_PD
+
+float64 cross_pos_K_P
+float64 cross_pos_max_P
+
+float64 along_rate_K_P
+float64 along_rate_K_D
+float64 along_rate_max_P
+float64 along_rate_max_D
+float64 along_rate_max_PD
+
+float64 tau_n
+float64 G_d

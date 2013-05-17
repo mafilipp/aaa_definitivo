@@ -1,0 +1,1 @@
+rostopic pub -1 waypoint aaa_definitivo/waypoint '{header: {stamp: now, frame_id: waypoint_message}, waypoint_z: 1.0, waypoint_dz: 0, waypoint_psi: 0, waypoint_theta: 0, waypoint_phi: 0, T_hover: 525.0, sample_time_sl: 0.05, K_P: 10, K_D: 0, K_I: 0, max_i: 200, max_pid: 1000}'

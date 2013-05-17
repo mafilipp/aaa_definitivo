@@ -1,12 +1,15 @@
 FILE(REMOVE_RECURSE
-  "../src/aaa_definitivo/msg"
   "../msg_gen"
   "../msg_gen"
+  "../src/sl_controller/msg"
   "CMakeFiles/ROSBUILD_genmsg_py"
-  "../src/aaa_definitivo/msg/__init__.py"
-  "../src/aaa_definitivo/msg/_DoubleArrayStamped.py"
-  "../src/aaa_definitivo/msg/_waypoint.py"
-  "../src/aaa_definitivo/msg/_controller_out.py"
+  "../src/sl_controller/msg/__init__.py"
+  "../src/sl_controller/msg/_psi_debugging.py"
+  "../src/sl_controller/msg/_output.py"
+  "../src/sl_controller/msg/_ext_state.py"
+  "../src/sl_controller/msg/_waypoint.py"
+  "../src/sl_controller/msg/_AngleMeasStamped.py"
+  "../src/sl_controller/msg/_control_message.py"
 )
 
 # Per-language clean rules from dependency scanning.

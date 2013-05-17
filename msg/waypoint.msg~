@@ -1,6 +1,8 @@
 Header    header
 
-float64 send_thrust
-float64 send_phi
-float64 send_theta
-float64 send_psi
+float64 x_ref
+float64 y_ref
+float64 z_ref
+float64 dz_ref
+float64 v_ref
+float64 number_path

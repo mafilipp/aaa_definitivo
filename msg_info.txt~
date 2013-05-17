@@ -1,0 +1,44 @@
+############################## Different message to pubblicate in puppet@colibri Terminal  #################################################
+
+
+Init
+
+rostopic pub -1 init sl_controller/init '{header: {stamp: now, frame_id: init}, thrust_K_P: 15, thrust_K_I: 0, thrust_K_D: 30, thrust_max_P: 800, thrust_max_I: 800, thrust_max_D: 800, thrust_max_PID: 800, cross_rate_K_P: 0.05, cross_rate_K_D: 0, cross_rate_max_P: 1000, cross_rate_max_D: 1000, cross_rate_max_PD: 1000, cross_pos_K_P: 0.05, cross_pos_max_P: 1000, along_rate_K_P: 0.05, along_rate_K_D: 0, along_rate_max_P: 1000, along_rate_max_D: 1000, along_rate_max_PD: 1000, tau_n: 0.325, G_d: 1.25}'
+
+
+
+PID_thrust
+
+rostopic pub -1 PID_thrust sl_controller/PID_thrust '{header: {stamp: now, frame_id: PID_thrust}, thrust_K_P: 15, thrust_K_I: 0, thrust_K_D: 30, thrust_max_P: 800, thrust_max_I: 800, thrust_max_D: 800, thrust_max_PID: 800}'
+
+
+
+PD_cross_track
+
+rostopic pub -1 PD_cross_track sl_controller/PD_cross_track '{header: {stamp: now, frame_id: PD_cross_track}, cross_rate_K_P: 0.05, cross_rate_K_D: 0, cross_rate_max_P: 1000, cross_rate_max_D: 1000, cross_rate_max_PD: 1000}'
+
+
+
+P_cross_track
+
+rostopic pub -1 P_cross_track sl_controller/P_cross_track '{header: {stamp: now, frame_id: P_cross_track}, cross_pos_K_P: 0.05, cross_pos_max_P: 1000}'
+
+
+
+PD_along_track
+
+rostopic pub -1 PD_along_track sl_controller/PD_along_track '{header: {stamp: now, frame_id: PD_along_track}, along_rate_K_P: 0.05, along_rate_K_D: 0, along_rate_max_P: 1000, along_rate_max_D: 1000, along_rate_max_PD: 1000}'
+
+
+
+delayed_feedback_control
+
+rostopic pub -1 delayed_feedback_control sl_controller/delayed_feedback_control '{header: {stamp: now, frame_id: delayed_feedback_control}, tau_n: 0.325, G_d: 1.25}'
+
+
+
+Waypoint (trajectory)
+
+rostopic pub -1 waypoint sl_controller/waypoint '{header: {stamp: now, frame_id: waypoint}, x_ref: 0, y_ref: 0, z_ref: 1, dz_ref: 0, v_ref: 0.05, number_path: 0}'
+
+

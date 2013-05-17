@@ -1,0 +1,35 @@
+# Initializaion Controller Parameter
+ 
+# z PID controller
+init/thrust_K_P: 100
+init/thrust_K_I: 10
+init/thrust_K_D: 50 
+
+init/thrust_max_P: 30
+init/thrust_max_I: 30 
+init/thrust_max_D: 40 
+init/thrust_max_PID: 200 
+
+# Cross Position P controller
+init/cross_pos_K_P: 0.6 
+init/cross_pos_max_P: 0.8 
+
+# Cross Rate PD controller
+init/cross_rate_K_P: 0.2
+init/cross_rate_K_D: 0
+
+init/cross_rate_max_P: 0.2 
+init/cross_rate_max_D: 0.2 
+init/cross_rate_max_PD: 0.2 
+
+# Along Position P controller
+init/along_pos_K_P: 0.6
+init/along_pos_max_P: 0.8
+
+# Along Rate PD controller
+init/along_rate_K_P: 0.2
+init/along_rate_K_D: 0
+
+init/along_rate_max_P: 0.2 
+init/along_rate_max_D: 0.2 
+init/along_rate_max_PD: 0.2 

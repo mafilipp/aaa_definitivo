@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo
+CMAKE_SOURCE_DIR = /home/mafilipp/fuerte_workspace/sandbox/sl_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build
+CMAKE_BINARY_DIR = /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,9 +66,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -94,6 +94,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named ROSBUILD_gencfg_cpp
+
+# Build rule for target.
+ROSBUILD_gencfg_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ROSBUILD_gencfg_cpp
+.PHONY : ROSBUILD_gencfg_cpp
+
+# fast build rule for target.
+ROSBUILD_gencfg_cpp/fast:
+	$(MAKE) -f CMakeFiles/ROSBUILD_gencfg_cpp.dir/build.make CMakeFiles/ROSBUILD_gencfg_cpp.dir/build
+.PHONY : ROSBUILD_gencfg_cpp/fast
 
 #=============================================================================
 # Target rules for targets named ROSBUILD_genmsg_cpp
@@ -161,19 +174,6 @@ ROSBUILD_gensrv_lisp/fast:
 .PHONY : ROSBUILD_gensrv_lisp/fast
 
 #=============================================================================
-# Target rules for targets named aaa_definitivo
-
-# Build rule for target.
-aaa_definitivo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aaa_definitivo
-.PHONY : aaa_definitivo
-
-# fast build rule for target.
-aaa_definitivo/fast:
-	$(MAKE) -f CMakeFiles/aaa_definitivo.dir/build.make CMakeFiles/aaa_definitivo.dir/build
-.PHONY : aaa_definitivo/fast
-
-#=============================================================================
 # Target rules for targets named clean-test-results
 
 # Build rule for target.
@@ -211,6 +211,32 @@ rosbuild_premsgsrvgen: cmake_check_build_system
 rosbuild_premsgsrvgen/fast:
 	$(MAKE) -f CMakeFiles/rosbuild_premsgsrvgen.dir/build.make CMakeFiles/rosbuild_premsgsrvgen.dir/build
 .PHONY : rosbuild_premsgsrvgen/fast
+
+#=============================================================================
+# Target rules for targets named rospack_gencfg
+
+# Build rule for target.
+rospack_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rospack_gencfg
+.PHONY : rospack_gencfg
+
+# fast build rule for target.
+rospack_gencfg/fast:
+	$(MAKE) -f CMakeFiles/rospack_gencfg.dir/build.make CMakeFiles/rospack_gencfg.dir/build
+.PHONY : rospack_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named rospack_gencfg_real
+
+# Build rule for target.
+rospack_gencfg_real: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rospack_gencfg_real
+.PHONY : rospack_gencfg_real
+
+# fast build rule for target.
+rospack_gencfg_real/fast:
+	$(MAKE) -f CMakeFiles/rospack_gencfg_real.dir/build.make CMakeFiles/rospack_gencfg_real.dir/build
+.PHONY : rospack_gencfg_real/fast
 
 #=============================================================================
 # Target rules for targets named rospack_genmsg
@@ -263,6 +289,19 @@ rospack_gensrv: cmake_check_build_system
 rospack_gensrv/fast:
 	$(MAKE) -f CMakeFiles/rospack_gensrv.dir/build.make CMakeFiles/rospack_gensrv.dir/build
 .PHONY : rospack_gensrv/fast
+
+#=============================================================================
+# Target rules for targets named sl_controller
+
+# Build rule for target.
+sl_controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sl_controller
+.PHONY : sl_controller
+
+# fast build rule for target.
+sl_controller/fast:
+	$(MAKE) -f CMakeFiles/sl_controller.dir/build.make CMakeFiles/sl_controller.dir/build
+.PHONY : sl_controller/fast
 
 #=============================================================================
 # Target rules for targets named test
@@ -331,18 +370,33 @@ tests/fast:
 
 # target to build an object file
 src/SimulinkModel.o:
-	$(MAKE) -f CMakeFiles/aaa_definitivo.dir/build.make CMakeFiles/aaa_definitivo.dir/src/SimulinkModel.o
+	$(MAKE) -f CMakeFiles/sl_controller.dir/build.make CMakeFiles/sl_controller.dir/src/SimulinkModel.o
 .PHONY : src/SimulinkModel.o
 
 # target to preprocess a source file
 src/SimulinkModel.i:
-	$(MAKE) -f CMakeFiles/aaa_definitivo.dir/build.make CMakeFiles/aaa_definitivo.dir/src/SimulinkModel.i
+	$(MAKE) -f CMakeFiles/sl_controller.dir/build.make CMakeFiles/sl_controller.dir/src/SimulinkModel.i
 .PHONY : src/SimulinkModel.i
 
 # target to generate assembly for a file
 src/SimulinkModel.s:
-	$(MAKE) -f CMakeFiles/aaa_definitivo.dir/build.make CMakeFiles/aaa_definitivo.dir/src/SimulinkModel.s
+	$(MAKE) -f CMakeFiles/sl_controller.dir/build.make CMakeFiles/sl_controller.dir/src/SimulinkModel.s
 .PHONY : src/SimulinkModel.s
+
+# target to build an object file
+src/dynamic_reconfigure.o:
+	$(MAKE) -f CMakeFiles/sl_controller.dir/build.make CMakeFiles/sl_controller.dir/src/dynamic_reconfigure.o
+.PHONY : src/dynamic_reconfigure.o
+
+# target to preprocess a source file
+src/dynamic_reconfigure.i:
+	$(MAKE) -f CMakeFiles/sl_controller.dir/build.make CMakeFiles/sl_controller.dir/src/dynamic_reconfigure.i
+.PHONY : src/dynamic_reconfigure.i
+
+# target to generate assembly for a file
+src/dynamic_reconfigure.s:
+	$(MAKE) -f CMakeFiles/sl_controller.dir/build.make CMakeFiles/sl_controller.dir/src/dynamic_reconfigure.s
+.PHONY : src/dynamic_reconfigure.s
 
 # Help Target
 help:
@@ -350,21 +404,24 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... ROSBUILD_gencfg_cpp"
 	@echo "... ROSBUILD_genmsg_cpp"
 	@echo "... ROSBUILD_genmsg_lisp"
 	@echo "... ROSBUILD_genmsg_py"
 	@echo "... ROSBUILD_gensrv_cpp"
 	@echo "... ROSBUILD_gensrv_lisp"
-	@echo "... aaa_definitivo"
 	@echo "... clean-test-results"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... rosbuild_precompile"
 	@echo "... rosbuild_premsgsrvgen"
+	@echo "... rospack_gencfg"
+	@echo "... rospack_gencfg_real"
 	@echo "... rospack_genmsg"
 	@echo "... rospack_genmsg_all"
 	@echo "... rospack_genmsg_libexe"
 	@echo "... rospack_gensrv"
+	@echo "... sl_controller"
 	@echo "... test"
 	@echo "... test-future"
 	@echo "... test-results"
@@ -373,6 +430,9 @@ help:
 	@echo "... src/SimulinkModel.o"
 	@echo "... src/SimulinkModel.i"
 	@echo "... src/SimulinkModel.s"
+	@echo "... src/dynamic_reconfigure.o"
+	@echo "... src/dynamic_reconfigure.i"
+	@echo "... src/dynamic_reconfigure.s"
 .PHONY : help
 
 

@@ -1,0 +1,24 @@
+<launch>
+
+
+    <node pkg="sl_controller" name="controller_simulink" type="sl_controller" clear_params="true"/>	
+    	<rosparam file="$(find sl_controller)/controller_parameter.yaml"/>
+	<remap from="/PCPerformancePlanner/waypoint" to="waypoint"/>		
+
+
+
+
+
+    <node pkg="control_publisher" name="talker" type="control_publisher" />	
+
+    <node pkg="slung_angle_vicon" name="slung_angle_vicon" type="slung_angle_vicon" />			
+
+    <!-- <node pkg="mavlink_ros" name="mavlink_ros_serial" type="mavlink_ros_serial" /> -->		
+
+     <!-- Start up the dynamic reconfigure GUI. -->
+  
+  	<node
+    pkg="dynamic_reconfigure" type="reconfigure_gui" name="reconfigure_gui">
+  	</node>	
+
+</launch>

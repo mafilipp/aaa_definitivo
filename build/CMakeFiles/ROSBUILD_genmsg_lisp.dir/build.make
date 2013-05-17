@@ -32,43 +32,134 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo
+CMAKE_SOURCE_DIR = /home/mafilipp/fuerte_workspace/sandbox/sl_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build
+CMAKE_BINARY_DIR = /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build
 
 # Utility rule file for ROSBUILD_genmsg_lisp.
 
 # Include the progress variables for this target.
 include CMakeFiles/ROSBUILD_genmsg_lisp.dir/progress.make
 
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/DoubleArrayStamped.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/psi_debugging.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_DoubleArrayStamped.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_psi_debugging.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/output.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_output.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/ext_state.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_ext_state.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/waypoint.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_waypoint.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/controller_out.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/AngleMeasStamped.lisp
 CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_controller_out.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_AngleMeasStamped.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/control_message.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_control_message.lisp
 
-../msg_gen/lisp/DoubleArrayStamped.lisp: ../msg/DoubleArrayStamped.msg
-../msg_gen/lisp/DoubleArrayStamped.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
-../msg_gen/lisp/DoubleArrayStamped.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/lisp/DoubleArrayStamped.lisp: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
-../msg_gen/lisp/DoubleArrayStamped.lisp: ../manifest.xml
-../msg_gen/lisp/DoubleArrayStamped.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../msg_gen/lisp/DoubleArrayStamped.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/lisp/DoubleArrayStamped.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/lisp/DoubleArrayStamped.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/lisp/DoubleArrayStamped.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/DoubleArrayStamped.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_DoubleArrayStamped.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/msg/DoubleArrayStamped.msg
+../msg_gen/lisp/psi_debugging.lisp: ../msg/psi_debugging.msg
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/lisp/psi_debugging.lisp: ../manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/lisp/psi_debugging.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/psi_debugging.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_psi_debugging.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/psi_debugging.msg
 
-../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/DoubleArrayStamped.lisp
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/psi_debugging.lisp
 
-../msg_gen/lisp/_package_DoubleArrayStamped.lisp: ../msg_gen/lisp/DoubleArrayStamped.lisp
+../msg_gen/lisp/_package_psi_debugging.lisp: ../msg_gen/lisp/psi_debugging.lisp
+
+../msg_gen/lisp/output.lisp: ../msg/output.msg
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/lisp/output.lisp: ../manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/lisp/output.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/output.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_output.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/output.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/output.lisp
+
+../msg_gen/lisp/_package_output.lisp: ../msg_gen/lisp/output.lisp
+
+../msg_gen/lisp/ext_state.lisp: ../msg/ext_state.msg
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/geometry_msgs/msg/Pose.msg
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/geometry_msgs/msg/Quaternion.msg
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/geometry_msgs/msg/Point.msg
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/geometry_msgs/msg/Vector3.msg
+../msg_gen/lisp/ext_state.lisp: ../manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/lisp/ext_state.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/ext_state.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_ext_state.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/ext_state.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/ext_state.lisp
+
+../msg_gen/lisp/_package_ext_state.lisp: ../msg_gen/lisp/ext_state.lisp
 
 ../msg_gen/lisp/waypoint.lisp: ../msg/waypoint.msg
 ../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
@@ -80,42 +171,111 @@ CMakeFiles/ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_controller_out.lisp
 ../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
 ../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
 ../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles $(CMAKE_PROGRESS_2)
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/lisp/waypoint.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/waypoint.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_waypoint.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/msg/waypoint.msg
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/waypoint.msg
 
 ../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/waypoint.lisp
 
 ../msg_gen/lisp/_package_waypoint.lisp: ../msg_gen/lisp/waypoint.lisp
 
-../msg_gen/lisp/controller_out.lisp: ../msg/controller_out.msg
-../msg_gen/lisp/controller_out.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
-../msg_gen/lisp/controller_out.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/lisp/controller_out.lisp: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
-../msg_gen/lisp/controller_out.lisp: ../manifest.xml
-../msg_gen/lisp/controller_out.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../msg_gen/lisp/controller_out.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/lisp/controller_out.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/lisp/controller_out.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/lisp/controller_out.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/controller_out.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_controller_out.lisp"
-	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/msg/controller_out.msg
+../msg_gen/lisp/AngleMeasStamped.lisp: ../msg/AngleMeasStamped.msg
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/lisp/AngleMeasStamped.lisp: ../manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/lisp/AngleMeasStamped.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/AngleMeasStamped.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_AngleMeasStamped.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/AngleMeasStamped.msg
 
-../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/controller_out.lisp
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/AngleMeasStamped.lisp
 
-../msg_gen/lisp/_package_controller_out.lisp: ../msg_gen/lisp/controller_out.lisp
+../msg_gen/lisp/_package_AngleMeasStamped.lisp: ../msg_gen/lisp/AngleMeasStamped.lisp
+
+../msg_gen/lisp/control_message.lisp: ../msg/control_message.msg
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/lisp/control_message.lisp: ../manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/lisp/control_message.lisp: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/lisp/control_message.lisp, ../msg_gen/lisp/_package.lisp, ../msg_gen/lisp/_package_control_message.lisp"
+	/opt/ros/fuerte/share/roslisp/rosbuild/scripts/genmsg_lisp.py /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/control_message.msg
+
+../msg_gen/lisp/_package.lisp: ../msg_gen/lisp/control_message.lisp
+
+../msg_gen/lisp/_package_control_message.lisp: ../msg_gen/lisp/control_message.lisp
 
 ROSBUILD_genmsg_lisp: CMakeFiles/ROSBUILD_genmsg_lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/DoubleArrayStamped.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/psi_debugging.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_DoubleArrayStamped.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_psi_debugging.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/output.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_output.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/ext_state.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_ext_state.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/waypoint.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_waypoint.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/controller_out.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/AngleMeasStamped.lisp
 ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
-ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_controller_out.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_AngleMeasStamped.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/control_message.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package.lisp
+ROSBUILD_genmsg_lisp: ../msg_gen/lisp/_package_control_message.lisp
 ROSBUILD_genmsg_lisp: CMakeFiles/ROSBUILD_genmsg_lisp.dir/build.make
 .PHONY : ROSBUILD_genmsg_lisp
 
@@ -128,6 +288,6 @@ CMakeFiles/ROSBUILD_genmsg_lisp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_genmsg_lisp.dir/clean
 
 CMakeFiles/ROSBUILD_genmsg_lisp.dir/depend:
-	cd /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mafilipp/fuerte_workspace/sandbox/sl_controller /home/mafilipp/fuerte_workspace/sandbox/sl_controller /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_genmsg_lisp.dir/depend
 

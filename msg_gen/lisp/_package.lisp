@@ -1,11 +1,17 @@
-(cl:defpackage aaa_definitivo-msg
+(cl:defpackage sl_controller-msg
   (:use )
   (:export
-   "<DOUBLEARRAYSTAMPED>"
-   "DOUBLEARRAYSTAMPED"
+   "<PSI_DEBUGGING>"
+   "PSI_DEBUGGING"
+   "<OUTPUT>"
+   "OUTPUT"
+   "<EXT_STATE>"
+   "EXT_STATE"
    "<WAYPOINT>"
    "WAYPOINT"
-   "<CONTROLLER_OUT>"
-   "CONTROLLER_OUT"
+   "<ANGLEMEASSTAMPED>"
+   "ANGLEMEASSTAMPED"
+   "<CONTROL_MESSAGE>"
+   "CONTROL_MESSAGE"
   ))
 

@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
-  "../src/aaa_definitivo/msg"
   "../msg_gen"
   "../msg_gen"
+  "../src/sl_controller/msg"
   "CMakeFiles/rospack_genmsg"
 )
 

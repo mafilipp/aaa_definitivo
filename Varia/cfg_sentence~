@@ -1,0 +1,4 @@
+chmod 755 ~/fuerte_workspace/sandbox/sl_controller/cfg/reconfigure.cfg
+
+
+chmod a+x ~/fuerte_workspace/sandbox/sl_controller/cfg/reconfigure.cfg

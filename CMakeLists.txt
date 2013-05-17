@@ -14,25 +14,18 @@ set(ROS_BUILD_TYPE RelWithDebInfo)
 
 rosbuild_init()
 
-set(MATLAB_ROOT /usr/local/MATLAB/R2012a)
-set(SIMULINK_OUTPUT_DIR /home/mafilipp/Dropbox/MATLAB/aaa_definitivo/simulink_model_grt_rtw)
+#set(MATLAB_ROOT /usr/local/MATLAB/R2012a)
+set(SIMULINK_OUTPUT_DIR /home/mafilipp/fuerte_workspace/sandbox/sl_controller/include/controller_simulink_ert_rtw)
 
 #set the default path for built executables to the "bin" directory
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+set(SimulinkModel_SOURCES src/SimulinkModel.cpp src/dynamic_reconfigure.cpp)
 #set the default path for built libraries to the "lib" directory
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 include_directories(${PROJECT_SOURCE_DIR}/include
-	${SIMULINK_OUTPUT_DIR}
-	${MATLAB_ROOT}/simulink/include
-	${MATLAB_ROOT}/extern/include
-	${MATLAB_ROOT}/rtw/c/src
-	${MATLAB_ROOT}/rtw/c/src/ext_mode/common)
-
-
- 
-
-
+	${SIMULINK_OUTPUT_DIR})
+	
 
 
 
@@ -44,9 +37,14 @@ rosbuild_genmsg() #modificato
 #uncomment if you have defined services
 #rosbuild_gensrv()
 
-rosbuild_add_executable(aaa_definitivo src/SimulinkModel.cpp)
-target_link_libraries(aaa_definitivo -lsimulink_model)
+rosbuild_add_executable(sl_controller ${SimulinkModel_SOURCES})
+#rosbuild_add_executable(sl_controller src/SimulinkModel.cpp)
+#target_link_libraries(sl_controller -lz_controller_const)
+target_link_libraries(sl_controller -lcontroller_simulink)
 
 #target_link_libraries(simulink_model ${PROJECT_NAME})
 
-
+#add dynamic reconfigure api
+rosbuild_find_ros_package(dynamic_reconfigure)
+include(${dynamic_reconfigure_PACKAGE_PATH}/cmake/cfgbuild.cmake)
+gencfg()

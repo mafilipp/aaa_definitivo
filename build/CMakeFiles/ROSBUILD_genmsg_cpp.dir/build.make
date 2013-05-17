@@ -32,66 +32,202 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo
+CMAKE_SOURCE_DIR = /home/mafilipp/fuerte_workspace/sandbox/sl_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build
+CMAKE_BINARY_DIR = /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build
 
 # Utility rule file for ROSBUILD_genmsg_cpp.
 
 # Include the progress variables for this target.
 include CMakeFiles/ROSBUILD_genmsg_cpp.dir/progress.make
 
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/aaa_definitivo/DoubleArrayStamped.h
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/aaa_definitivo/waypoint.h
-CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/aaa_definitivo/controller_out.h
+CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/sl_controller/psi_debugging.h
+CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/sl_controller/output.h
+CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/sl_controller/ext_state.h
+CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/sl_controller/waypoint.h
+CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h
+CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/sl_controller/control_message.h
 
-../msg_gen/cpp/include/aaa_definitivo/DoubleArrayStamped.h: ../msg/DoubleArrayStamped.msg
-../msg_gen/cpp/include/aaa_definitivo/DoubleArrayStamped.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
-../msg_gen/cpp/include/aaa_definitivo/DoubleArrayStamped.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/cpp/include/aaa_definitivo/DoubleArrayStamped.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
-../msg_gen/cpp/include/aaa_definitivo/DoubleArrayStamped.h: ../manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/DoubleArrayStamped.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/DoubleArrayStamped.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/DoubleArrayStamped.h: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/DoubleArrayStamped.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/DoubleArrayStamped.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/aaa_definitivo/DoubleArrayStamped.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/msg/DoubleArrayStamped.msg
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: ../msg/psi_debugging.msg
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: ../manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/cpp/include/sl_controller/psi_debugging.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/sl_controller/psi_debugging.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/psi_debugging.msg
 
-../msg_gen/cpp/include/aaa_definitivo/waypoint.h: ../msg/waypoint.msg
-../msg_gen/cpp/include/aaa_definitivo/waypoint.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
-../msg_gen/cpp/include/aaa_definitivo/waypoint.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/cpp/include/aaa_definitivo/waypoint.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
-../msg_gen/cpp/include/aaa_definitivo/waypoint.h: ../manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/waypoint.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/waypoint.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/waypoint.h: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/waypoint.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/waypoint.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/aaa_definitivo/waypoint.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/msg/waypoint.msg
+../msg_gen/cpp/include/sl_controller/output.h: ../msg/output.msg
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/cpp/include/sl_controller/output.h: ../manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/cpp/include/sl_controller/output.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/sl_controller/output.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/output.msg
 
-../msg_gen/cpp/include/aaa_definitivo/controller_out.h: ../msg/controller_out.msg
-../msg_gen/cpp/include/aaa_definitivo/controller_out.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
-../msg_gen/cpp/include/aaa_definitivo/controller_out.h: /opt/ros/fuerte/share/roslib/bin/gendeps
-../msg_gen/cpp/include/aaa_definitivo/controller_out.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
-../msg_gen/cpp/include/aaa_definitivo/controller_out.h: ../manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/controller_out.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/controller_out.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/controller_out.h: /opt/ros/fuerte/share/roslang/manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/controller_out.h: /opt/ros/fuerte/share/roscpp/manifest.xml
-../msg_gen/cpp/include/aaa_definitivo/controller_out.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/aaa_definitivo/controller_out.h"
-	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/msg/controller_out.msg
+../msg_gen/cpp/include/sl_controller/ext_state.h: ../msg/ext_state.msg
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/geometry_msgs/msg/Pose.msg
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/geometry_msgs/msg/Quaternion.msg
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/geometry_msgs/msg/Point.msg
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/geometry_msgs/msg/Vector3.msg
+../msg_gen/cpp/include/sl_controller/ext_state.h: ../manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/cpp/include/sl_controller/ext_state.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/sl_controller/ext_state.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/ext_state.msg
+
+../msg_gen/cpp/include/sl_controller/waypoint.h: ../msg/waypoint.msg
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/cpp/include/sl_controller/waypoint.h: ../manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/cpp/include/sl_controller/waypoint.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/sl_controller/waypoint.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/waypoint.msg
+
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: ../msg/AngleMeasStamped.msg
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: ../manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/AngleMeasStamped.msg
+
+../msg_gen/cpp/include/sl_controller/control_message.h: ../msg/control_message.msg
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../msg_gen/cpp/include/sl_controller/control_message.h: ../manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/share/rosservice/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../msg_gen/cpp/include/sl_controller/control_message.h: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/sl_controller/control_message.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/control_message.msg
 
 ROSBUILD_genmsg_cpp: CMakeFiles/ROSBUILD_genmsg_cpp
-ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/aaa_definitivo/DoubleArrayStamped.h
-ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/aaa_definitivo/waypoint.h
-ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/aaa_definitivo/controller_out.h
+ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/sl_controller/psi_debugging.h
+ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/sl_controller/output.h
+ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/sl_controller/ext_state.h
+ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/sl_controller/waypoint.h
+ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/sl_controller/AngleMeasStamped.h
+ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/sl_controller/control_message.h
 ROSBUILD_genmsg_cpp: CMakeFiles/ROSBUILD_genmsg_cpp.dir/build.make
 .PHONY : ROSBUILD_genmsg_cpp
 
@@ -104,6 +240,6 @@ CMakeFiles/ROSBUILD_genmsg_cpp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_genmsg_cpp.dir/clean
 
 CMakeFiles/ROSBUILD_genmsg_cpp.dir/depend:
-	cd /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mafilipp/fuerte_workspace/sandbox/sl_controller /home/mafilipp/fuerte_workspace/sandbox/sl_controller /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles/ROSBUILD_genmsg_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_genmsg_cpp.dir/depend
 

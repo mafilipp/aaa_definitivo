@@ -1,0 +1,47 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~Supply_type" : \b [int] What kind of supply power will be used min: 0, default: 0, max: 2
+- \b "~Load_0_200" : \b [double] Load hanging at the copter min: 0.0, default: 0.0, max: 2000.0
+- \b "~Frequency" : \b [double] frequency of the HLC min: 0.0, default: 30.0, max: 50.0
+- \b "~init_PID" : \b [bool] set the initial parameter (from file controller_patameter.yaml) min: False, default: False, max: True
+- \b "~load_param" : \b [bool] load parameter from a file or record the courrent min: False, default: False, max: True
+- \b "~use_param" : \b [bool] use the loaded or saved parameter min: False, default: False, max: True
+- \b "~thrust_K_P" : \b [double] K_P z PID controller min: 0.0, default: 100.0, max: 300.0
+- \b "~thrust_K_I" : \b [double] K_I z PID controller min: 0.0, default: 10.0, max: 30.0
+- \b "~thrust_K_D" : \b [double] K_D z PID controller min: 0.0, default: 50.0, max: 150.0
+- \b "~thrust_max_P" : \b [double] P_action max z PID controller min: 0.0, default: 30.0, max: 100.0
+- \b "~thrust_max_I" : \b [double] I_action max z PID controlle min: 0.0, default: 30.0, max: 100.0
+- \b "~thrust_max_D" : \b [double] D_action max z PID controlle min: 0.0, default: 40.0, max: 100.0
+- \b "~thrust_max_PID" : \b [double] PID_action max z PID controlle min: 0.0, default: 200.0, max: 500.0
+- \b "~cross_pos_K_P" : \b [double] K_P cross position controller min: 0.0, default: 0.6, max: 2.0
+- \b "~cross_pos_max_P" : \b [double] P_action max corss position controller min: 0.0, default: 0.8, max: 3.0
+- \b "~cross_rate_K_P" : \b [double] K_P cross rate controller min: 0.0, default: 0.2, max: 1.0
+- \b "~cross_rate_K_D" : \b [double] K_D cross rate controller min: 0.0, default: 0.0, max: 0.1
+- \b "~cross_rate_max_P" : \b [double] P_action max cross rate controller min: 0.0, default: 0.2, max: 1.0
+- \b "~cross_rate_max_D" : \b [double] D_action max cross rate controller min: 0.0, default: 0.2, max: 1.0
+- \b "~cross_rate_max_PD" : \b [double] PD_action max cross rate controller min: 0.0, default: 0.2, max: 1.0
+- \b "~along_pos_K_P" : \b [double] K_P along position controller min: 0.0, default: 0.6, max: 2.0
+- \b "~along_pos_max_P" : \b [double] P_action max along position controller min: 0.0, default: 0.8, max: 3.0
+- \b "~along_rate_K_P" : \b [double] K_P along rate controller min: 0.0, default: 0.2, max: 1.0
+- \b "~along_rate_K_D" : \b [double] K_D along rate controller min: 0.0, default: 0.0, max: 0.1
+- \b "~along_rate_max_P" : \b [double] P_action max along rate controller min: 0.0, default: 0.2, max: 1.0
+- \b "~along_rate_max_D" : \b [double] D_action max along rate controller min: 0.0, default: 0.2, max: 1.0
+- \b "~along_rate_max_PD" : \b [double] PD_action max along rate controller min: 0.0, default: 0.2, max: 1.0
+- \b "~N_Delay" : \b [int] Numbers of loops to wait untill feeding the angles min: 0, default: 3, max: 20
+- \b "~G_d" : \b [double] Gain on the load angles min: 0.0, default: 0.0, max: 0.5
+- \b "~l_L" : \b [double] length from the copter CoG to puppet CoG min: 0.0, default: 0.6, max: 2.0
+- \b "~df_sign_ct" : \b [double] Sign for delay cross track min: -1.0, default: 1.0, max: 1.0
+- \b "~df_sign_at" : \b [double] Sign for delay along track min: -1.0, default: 1.0, max: 1.0
+- \b "~is_on" : \b [int] turn input shaper on and off min: 0, default: 0, max: 1
+- \b "~is_N_impulses" : \b [int] Number of impulses min: 1, default: 2, max: 5
+- \b "~is_omega_ct" : \b [double] Frequency cross track min: 0.0, default: 0.5, max: 10.0
+- \b "~is_omega_at" : \b [double] Frequency along track min: 0.0, default: 0.5, max: 10.0
+- \b "~is_zeta_ct" : \b [double] damping cross track min: 0.0, default: 0.1, max: 1.0
+- \b "~is_zeta_at" : \b [double] damping along track min: 0.0, default: 0.1, max: 1.0
+- \b "~test1" : \b [double] debug channel 1 min: -100.0, default: 0.0, max: 100.0
+- \b "~test2" : \b [double] debug channel 2 min: -100.0, default: 0.0, max: 100.0
+- \b "~test3" : \b [double] debug channel 3 min: -100.0, default: 0.0, max: 100.0
+- \b "~init_coordinate" : \b [bool] initialize the coordinate system where the copter in this moment is min: False, default: False, max: True
+

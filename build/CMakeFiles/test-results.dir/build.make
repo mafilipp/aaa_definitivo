@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo
+CMAKE_SOURCE_DIR = /home/mafilipp/fuerte_workspace/sandbox/sl_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build
+CMAKE_BINARY_DIR = /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build
 
 # Utility rule file for test-results.
 
@@ -43,7 +43,7 @@ CMAKE_BINARY_DIR = /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build
 include CMakeFiles/test-results.dir/progress.make
 
 CMakeFiles/test-results:
-	/opt/ros/fuerte/share/rosunit/bin/summarize_results.py --nodeps aaa_definitivo
+	/opt/ros/fuerte/share/rosunit/bin/summarize_results.py --nodeps sl_controller
 
 test-results: CMakeFiles/test-results
 test-results: CMakeFiles/test-results.dir/build.make
@@ -58,6 +58,6 @@ CMakeFiles/test-results.dir/clean:
 .PHONY : CMakeFiles/test-results.dir/clean
 
 CMakeFiles/test-results.dir/depend:
-	cd /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles/test-results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mafilipp/fuerte_workspace/sandbox/sl_controller /home/mafilipp/fuerte_workspace/sandbox/sl_controller /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles/test-results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test-results.dir/depend
 

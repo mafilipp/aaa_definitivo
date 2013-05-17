@@ -1,0 +1,26 @@
+Header    header
+
+float64 z_err
+float64 p_action_thrust
+float64 i_action_thrust
+float64 d_action_thrust
+float64 e_ct
+float64 df_delta_pos_ct
+float64 e_ct_feed
+float64 des_cross_rate
+float64 des_cross_rate_shaped
+float64 df_delta_vel_ct
+float64 des_cross_rate_feed
+float64 cross_rate_is
+float64 ct_p_action
+float64 ct_d_action
+float64 e_at
+float64 df_delta_pos_at
+float64 e_at_feed
+float64 des_along_rate
+float64 des_along_rate_shaped
+float64 df_delta_vel_at
+float64 des_along_rate_feed
+float64 along_rate_is
+float64 at_p_action
+float64 at_d_action

@@ -1,0 +1,981 @@
+<html><head><title>Code Interface Report for controller_simulink</title>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><script language="JavaScript" type="text/javascript">function rtwTableShrink(o) {var t = o.nextSibling;if (t.nodeType != 1) {t = t.nextSibling;}if (t.style.display == "none") {t.style.display = "";o.innerHTML = "[-]"} else {t.style.display = "none";o.innerHTML = "[+] ... "}}</script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /></head>
+<body ONLOAD="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdCodeInterface'); else local_onload();}} catch(err) {};"><h1>Code Interface Report for controller_simulink</h1>
+<h3>Table of Contents</h3>
+<ul><li><a href="#sec_Entry_Point_Functions">Entry Point Functions</a>
+</li>
+<li><a href="#sec_Inports">Inports</a>
+</li>
+<li><a href="#sec_Outports">Outports</a>
+</li>
+<li><a href="#sec_Interface_Parameters">Interface Parameters</a>
+</li>
+<li><a href="#sec_Data_Stores">Data Stores</a>
+</li>
+</ul>
+<h3><a name="sec_Entry_Point_Functions">Entry Point Functions</a>
+</h3>
+<p align="left">Function: <a href="controller_simulink_cpp.html#fcn_controller_simulink_initialize">controller_simulink_initialize</a></p>
+<table width="100%" class="AltRow" cellspacing="0"><tr class="even"><td width="25%" align="left">Prototype</td>
+<td width="75%" align="left"><b>void controller_simulink_initialize(void)</b>
+</td>
+</tr>
+<tr class="odd"><td width="25%" align="left">Description</td>
+<td width="75%" align="left">Initialization entry point of generated code</td>
+</tr>
+<tr class="even"><td width="25%" align="left">Timing</td>
+<td width="75%" align="left">Called once</td>
+</tr>
+<tr class="odd"><td width="25%" align="left">Arguments</td>
+<td width="75%" align="left">None</td>
+</tr>
+<tr class="even"><td width="25%" align="left">Return value</td>
+<td width="75%" align="left">None</td>
+</tr>
+<tr class="odd"><td width="25%" align="left">Header file</td>
+<td width="75%" align="left"><a href="controller_simulink_h.html">controller_simulink.h</a></td>
+</tr>
+</table>
+<p align="left">Function: <a href="controller_simulink_cpp.html#fcn_controller_simulink_step">controller_simulink_step</a></p>
+<table width="100%" class="AltRow" cellspacing="0"><tr class="even"><td width="25%" align="left">Prototype</td>
+<td width="75%" align="left"><b>void controller_simulink_step(void)</b>
+</td>
+</tr>
+<tr class="odd"><td width="25%" align="left">Description</td>
+<td width="75%" align="left">Output entry point of generated code</td>
+</tr>
+<tr class="even"><td width="25%" align="left">Timing</td>
+<td width="75%" align="left">Called periodically, every 0.033333 seconds</td>
+</tr>
+<tr class="odd"><td width="25%" align="left">Arguments</td>
+<td width="75%" align="left">None</td>
+</tr>
+<tr class="even"><td width="25%" align="left">Return value</td>
+<td width="75%" align="left">None</td>
+</tr>
+<tr class="odd"><td width="25%" align="left">Header file</td>
+<td width="75%" align="left"><a href="controller_simulink_h.html">controller_simulink.h</a></td>
+</tr>
+</table>
+<p align="left">Function: <a href="controller_simulink_cpp.html#fcn_controller_simulink_terminate">controller_simulink_terminate</a></p>
+<table width="100%" class="AltRow" cellspacing="0"><tr class="even"><td width="25%" align="left">Prototype</td>
+<td width="75%" align="left"><b>void controller_simulink_terminate(void)</b>
+</td>
+</tr>
+<tr class="odd"><td width="25%" align="left">Description</td>
+<td width="75%" align="left">Termination entry point of generated code</td>
+</tr>
+<tr class="even"><td width="25%" align="left">Timing</td>
+<td width="75%" align="left">Called once</td>
+</tr>
+<tr class="odd"><td width="25%" align="left">Arguments</td>
+<td width="75%" align="left">None</td>
+</tr>
+<tr class="even"><td width="25%" align="left">Return value</td>
+<td width="75%" align="left">None</td>
+</tr>
+<tr class="odd"><td width="25%" align="left">Header file</td>
+<td width="75%" align="left"><a href="controller_simulink_h.html">controller_simulink.h</a></td>
+</tr>
+</table>
+<h3><a name="sec_Inports">Inports</a>
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0"><tr class="heading"><td width="40%" align="left"><b>Block Name</b>
+</td>
+<td width="25%" align="left"><b>Code Identifier</b>
+</td>
+<td width="25%" align="left"><b>Data Type</b>
+</td>
+<td width="10%" align="right"><b>Dimension</b>
+</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:14')" name="code2model" class="code2model">&lt;Root&gt;/x_ref</a></td>
+<td width="25%" align="left">controller_simulink_U.x_ref</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:15')" name="code2model" class="code2model">&lt;Root&gt;/y_ref</a></td>
+<td width="25%" align="left">controller_simulink_U.y_ref</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:16')" name="code2model" class="code2model">&lt;Root&gt;/z_ref</a></td>
+<td width="25%" align="left">controller_simulink_U.z_ref</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:17')" name="code2model" class="code2model">&lt;Root&gt;/dz_ref</a></td>
+<td width="25%" align="left">controller_simulink_U.dz_ref</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:18')" name="code2model" class="code2model">&lt;Root&gt;/v_ref</a></td>
+<td width="25%" align="left">controller_simulink_U.v_ref</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:19')" name="code2model" class="code2model">&lt;Root&gt;/number_path</a></td>
+<td width="25%" align="left">controller_simulink_U.number_path</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:20')" name="code2model" class="code2model">&lt;Root&gt;/x</a></td>
+<td width="25%" align="left">controller_simulink_U.x</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:21')" name="code2model" class="code2model">&lt;Root&gt;/y</a></td>
+<td width="25%" align="left">controller_simulink_U.y</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:22')" name="code2model" class="code2model">&lt;Root&gt;/z</a></td>
+<td width="25%" align="left">controller_simulink_U.z</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:23')" name="code2model" class="code2model">&lt;Root&gt;/phi</a></td>
+<td width="25%" align="left">controller_simulink_U.phi</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:24')" name="code2model" class="code2model">&lt;Root&gt;/theta</a></td>
+<td width="25%" align="left">controller_simulink_U.theta</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:25')" name="code2model" class="code2model">&lt;Root&gt;/psi</a></td>
+<td width="25%" align="left">controller_simulink_U.psi</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:26')" name="code2model" class="code2model">&lt;Root&gt;/dx</a></td>
+<td width="25%" align="left">controller_simulink_U.dx</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:27')" name="code2model" class="code2model">&lt;Root&gt;/dy</a></td>
+<td width="25%" align="left">controller_simulink_U.dy</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:28')" name="code2model" class="code2model">&lt;Root&gt;/dz</a></td>
+<td width="25%" align="left">controller_simulink_U.dz</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:29')" name="code2model" class="code2model">&lt;Root&gt;/roll_L</a></td>
+<td width="25%" align="left">controller_simulink_U.roll_L</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:30')" name="code2model" class="code2model">&lt;Root&gt;/pitch_L</a></td>
+<td width="25%" align="left">controller_simulink_U.pitch_L</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2104')" name="code2model" class="code2model">&lt;Root&gt;/yaw_APM</a></td>
+<td width="25%" align="left">controller_simulink_U.yaw_APM</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+</table>
+<h3><a name="sec_Outports">Outports</a>
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0"><tr class="heading"><td width="40%" align="left"><b>Block Name</b>
+</td>
+<td width="25%" align="left"><b>Code Identifier</b>
+</td>
+<td width="25%" align="left"><b>Data Type</b>
+</td>
+<td width="10%" align="right"><b>Dimension</b>
+</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:6')" name="code2model" class="code2model">&lt;Root&gt;/set_thrust</a></td>
+<td width="25%" align="left">controller_simulink_Y.set_thrust</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:202')" name="code2model" class="code2model">&lt;Root&gt;/set_phi</a></td>
+<td width="25%" align="left">controller_simulink_Y.set_phi</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:203')" name="code2model" class="code2model">&lt;Root&gt;/set_theta</a></td>
+<td width="25%" align="left">controller_simulink_Y.set_theta</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:204')" name="code2model" class="code2model">&lt;Root&gt;/set_psi</a></td>
+<td width="25%" align="left">controller_simulink_Y.set_psi</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2081')" name="code2model" class="code2model">&lt;Root&gt;/p_action_thrust</a></td>
+<td width="25%" align="left">controller_simulink_Y.p_action_thrust</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2082')" name="code2model" class="code2model">&lt;Root&gt;/i_action_thrust</a></td>
+<td width="25%" align="left">controller_simulink_Y.i_action_thrust</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2083')" name="code2model" class="code2model">&lt;Root&gt;/d_action_thrust</a></td>
+<td width="25%" align="left">controller_simulink_Y.d_action_thrust</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2084')" name="code2model" class="code2model">&lt;Root&gt;/z_err</a></td>
+<td width="25%" align="left">controller_simulink_Y.z_err</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:1881')" name="code2model" class="code2model">&lt;Root&gt;/e_ct</a></td>
+<td width="25%" align="left">controller_simulink_Y.e_ct</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:1882')" name="code2model" class="code2model">&lt;Root&gt;/df_delta_pos_ct</a></td>
+<td width="25%" align="left">controller_simulink_Y.df_delta_pos_ct</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:1877')" name="code2model" class="code2model">&lt;Root&gt;/e_ct_feed</a></td>
+<td width="25%" align="left">controller_simulink_Y.e_ct_feed</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:1878')" name="code2model" class="code2model">&lt;Root&gt;/des_cross_rate</a></td>
+<td width="25%" align="left">controller_simulink_Y.des_cross_rate</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:1879')" name="code2model" class="code2model">&lt;Root&gt;/des_cross_rate_shaped</a></td>
+<td width="25%" align="left">controller_simulink_Y.des_cross_rate_shaped</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:1880')" name="code2model" class="code2model">&lt;Root&gt;/df_delta_vel_ct</a></td>
+<td width="25%" align="left">controller_simulink_Y.df_delta_vel_ct</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2974')" name="code2model" class="code2model">&lt;Root&gt;/des_cross_rate_feed</a></td>
+<td width="25%" align="left">controller_simulink_Y.des_cross_rate_feed</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2975')" name="code2model" class="code2model">&lt;Root&gt;/cross_rate_is</a></td>
+<td width="25%" align="left">controller_simulink_Y.cross_rate_is</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2976')" name="code2model" class="code2model">&lt;Root&gt;/ct_p_action</a></td>
+<td width="25%" align="left">controller_simulink_Y.ct_p_action</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2977')" name="code2model" class="code2model">&lt;Root&gt;/ct_d_action</a></td>
+<td width="25%" align="left">controller_simulink_Y.ct_d_action</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2978')" name="code2model" class="code2model">&lt;Root&gt;/e_at</a></td>
+<td width="25%" align="left">controller_simulink_Y.e_at</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2979')" name="code2model" class="code2model">&lt;Root&gt;/df_delta_pos_at</a></td>
+<td width="25%" align="left">controller_simulink_Y.df_delta_pos_at</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2980')" name="code2model" class="code2model">&lt;Root&gt;/e_at_feed</a></td>
+<td width="25%" align="left">controller_simulink_Y.e_at_feed</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2981')" name="code2model" class="code2model">&lt;Root&gt;/des_along_rate</a></td>
+<td width="25%" align="left">controller_simulink_Y.des_along_rate</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2982')" name="code2model" class="code2model">&lt;Root&gt;/des_along_rate_shaped</a></td>
+<td width="25%" align="left">controller_simulink_Y.des_along_rate_shaped</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2983')" name="code2model" class="code2model">&lt;Root&gt;/df_delta_vel_at</a></td>
+<td width="25%" align="left">controller_simulink_Y.df_delta_vel_at</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2984')" name="code2model" class="code2model">&lt;Root&gt;/des_along_rate_feed</a></td>
+<td width="25%" align="left">controller_simulink_Y.des_along_rate_feed</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2985')" name="code2model" class="code2model">&lt;Root&gt;/along_rate_is</a></td>
+<td width="25%" align="left">controller_simulink_Y.along_rate_is</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2986')" name="code2model" class="code2model">&lt;Root&gt;/at_p_action</a></td>
+<td width="25%" align="left">controller_simulink_Y.at_p_action</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2987')" name="code2model" class="code2model">&lt;Root&gt;/at_d_action</a></td>
+<td width="25%" align="left">controller_simulink_Y.at_d_action</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2166')" name="code2model" class="code2model">&lt;Root&gt;/psi_ref</a></td>
+<td width="25%" align="left">controller_simulink_Y.psi_ref</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2167')" name="code2model" class="code2model">&lt;Root&gt;/psi_state</a></td>
+<td width="25%" align="left">controller_simulink_Y.psi_state</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2168')" name="code2model" class="code2model">&lt;Root&gt;/e_psi</a></td>
+<td width="25%" align="left">controller_simulink_Y.e_psi</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2169')" name="code2model" class="code2model">&lt;Root&gt;/psi_APM</a></td>
+<td width="25%" align="left">controller_simulink_Y.psi_APM</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2170')" name="code2model" class="code2model">&lt;Root&gt;/e_psi_corr</a></td>
+<td width="25%" align="left">controller_simulink_Y.e_psi_corr</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2171')" name="code2model" class="code2model">&lt;Root&gt;/psi_ref_APM</a></td>
+<td width="25%" align="left">controller_simulink_Y.psi_ref_APM</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+</table>
+<h3><a name="sec_Interface_Parameters">Interface Parameters</a>
+</h3>
+<span title="Click to shrink or expand table" onclick="rtwTableShrink(this)">[-]</span><table width="100%" class="AltRow FirstColumn" cellspacing="0"><tr class="heading"><td width="40%" align="left"><b>Parameter Source</b>
+</td>
+<td width="25%" align="left"><b>Code Identifier</b>
+</td>
+<td width="25%" align="left"><b>Data Type</b>
+</td>
+<td width="10%" align="right"><b>Dimension</b>
+</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2475')" name="code2model" class="code2model">&lt;S3&gt;/Unit Delay</a></td>
+<td width="25%" align="left">controller_simulink_P.UnitDelay_X0</td>
+<td width="25%" align="left">bus_errcalc</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2472')" name="code2model" class="code2model">&lt;S3&gt;/Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2916')" name="code2model" class="code2model">&lt;S15&gt;/Gain2</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain2_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2851')" name="code2model" class="code2model">&lt;S11&gt;/Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain_Gain_i</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2914')" name="code2model" class="code2model">&lt;S15&gt;/Gain1</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain1_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2855')" name="code2model" class="code2model">&lt;S11&gt;/Gain4</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain4_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2785')" name="code2model" class="code2model">&lt;S4&gt;/Gain3</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain3_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2852')" name="code2model" class="code2model">&lt;S11&gt;/Gain1</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain1_Gain_e</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2853')" name="code2model" class="code2model">&lt;S11&gt;/Gain2</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain2_Gain_a</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2915')" name="code2model" class="code2model">&lt;S15&gt;/Gain10</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain10_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2856')" name="code2model" class="code2model">&lt;S11&gt;/Gain5</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain5_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2870')" name="code2model" class="code2model">&lt;S11&gt;/hover_thrust</a></td>
+<td width="25%" align="left">controller_simulink_P.hover_thrust_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2864')" name="code2model" class="code2model">&lt;S11&gt;/c_thrust_K_P</a></td>
+<td width="25%" align="left">controller_simulink_P.c_thrust_K_P_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2873:31')" name="code2model" class="code2model">&lt;S37&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2863')" name="code2model" class="code2model">&lt;S11&gt;/c_thrust_K_I</a></td>
+<td width="25%" align="left">controller_simulink_P.c_thrust_K_I_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2872:31')" name="code2model" class="code2model">&lt;S36&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_k</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2862')" name="code2model" class="code2model">&lt;S11&gt;/c_thrust_K_D</a></td>
+<td width="25%" align="left">controller_simulink_P.c_thrust_K_D_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2871:31')" name="code2model" class="code2model">&lt;S35&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_o</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2867')" name="code2model" class="code2model">&lt;S11&gt;/c_thrust_max_P</a></td>
+<td width="25%" align="left">controller_simulink_P.c_thrust_max_P_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2876:31')" name="code2model" class="code2model">&lt;S40&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_m</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2866')" name="code2model" class="code2model">&lt;S11&gt;/c_thrust_max_I</a></td>
+<td width="25%" align="left">controller_simulink_P.c_thrust_max_I_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2875:31')" name="code2model" class="code2model">&lt;S39&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_d</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2865')" name="code2model" class="code2model">&lt;S11&gt;/c_thrust_max_D</a></td>
+<td width="25%" align="left">controller_simulink_P.c_thrust_max_D_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2874:31')" name="code2model" class="code2model">&lt;S38&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_kp</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2868')" name="code2model" class="code2model">&lt;S11&gt;/c_thrust_max_PID</a></td>
+<td width="25%" align="left">controller_simulink_P.c_thrust_max_PID_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2877:31')" name="code2model" class="code2model">&lt;S41&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_h</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2869')" name="code2model" class="code2model">&lt;S11&gt;/c_thrust_sample_time</a></td>
+<td width="25%" align="left">controller_simulink_P.c_thrust_sample_time_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2861')" name="code2model" class="code2model">&lt;S11&gt;/Unit Delay</a></td>
+<td width="25%" align="left">controller_simulink_P.UnitDelay_X0_l</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2854')" name="code2model" class="code2model">&lt;S11&gt;/Gain3</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain3_Gain_i</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2917')" name="code2model" class="code2model">&lt;S15&gt;/Gain3</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain3_Gain_l</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2919')" name="code2model" class="code2model">&lt;S15&gt;/Gain5</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain5_Gain_g</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2776')" name="code2model" class="code2model">&lt;S7&gt;/df_G_d</a></td>
+<td width="25%" align="left">controller_simulink_P.df_G_d_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2777')" name="code2model" class="code2model">&lt;S7&gt;/df_l_L</a></td>
+<td width="25%" align="left">controller_simulink_P.df_l_L_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2779')" name="code2model" class="code2model">&lt;S7&gt;/df_sign_ct</a></td>
+<td width="25%" align="left">controller_simulink_P.df_sign_ct_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2784')" name="code2model" class="code2model">&lt;S4&gt;/Gain1</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain1_Gain_d</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2778')" name="code2model" class="code2model">&lt;S7&gt;/df_sign_at</a></td>
+<td width="25%" align="left">controller_simulink_P.df_sign_at_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2484')" name="code2model" class="code2model">&lt;S19&gt;/df_N_delay</a></td>
+<td width="25%" align="left">controller_simulink_P.df_N_delay_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2774')" name="code2model" class="code2model">&lt;S7&gt;/Sine</a></td>
+<td width="25%" align="left">controller_simulink_P.Sine_Amp</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2774')" name="code2model" class="code2model">&lt;S7&gt;/Sine</a></td>
+<td width="25%" align="left">controller_simulink_P.Sine_Bias</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2774')" name="code2model" class="code2model">&lt;S7&gt;/Sine</a></td>
+<td width="25%" align="left">controller_simulink_P.Sine_Freq</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2774')" name="code2model" class="code2model">&lt;S7&gt;/Sine</a></td>
+<td width="25%" align="left">controller_simulink_P.Sine_Phase</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2893')" name="code2model" class="code2model">&lt;S13&gt;/Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain_Gain_o</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2896')" name="code2model" class="code2model">&lt;S13&gt;/c_cross_pos_K_P</a></td>
+<td width="25%" align="left">controller_simulink_P.c_cross_pos_K_P_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2898:31')" name="code2model" class="code2model">&lt;S46&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_l</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2897')" name="code2model" class="code2model">&lt;S13&gt;/c_cross_pos_max_P</a></td>
+<td width="25%" align="left">controller_simulink_P.c_cross_pos_max_P_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2899:31')" name="code2model" class="code2model">&lt;S47&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_e</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2894')" name="code2model" class="code2model">&lt;S13&gt;/Gain3</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain3_Gain_f</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2918')" name="code2model" class="code2model">&lt;S15&gt;/Gain4</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain4_Gain_l</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2775')" name="code2model" class="code2model">&lt;S7&gt;/Sine1</a></td>
+<td width="25%" align="left">controller_simulink_P.Sine1_Amp</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2775')" name="code2model" class="code2model">&lt;S7&gt;/Sine1</a></td>
+<td width="25%" align="left">controller_simulink_P.Sine1_Bias</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2775')" name="code2model" class="code2model">&lt;S7&gt;/Sine1</a></td>
+<td width="25%" align="left">controller_simulink_P.Sine1_Freq</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2775')" name="code2model" class="code2model">&lt;S7&gt;/Sine1</a></td>
+<td width="25%" align="left">controller_simulink_P.Sine1_Phase</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2883')" name="code2model" class="code2model">&lt;S12&gt;/Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain_Gain_l</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2921')" name="code2model" class="code2model">&lt;S15&gt;/Gain7</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain7_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2888')" name="code2model" class="code2model">&lt;S12&gt;/c_along_pos_K_P</a></td>
+<td width="25%" align="left">controller_simulink_P.c_along_pos_K_P_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2886:31')" name="code2model" class="code2model">&lt;S43&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_n</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2889')" name="code2model" class="code2model">&lt;S12&gt;/c_along_pos_max_P</a></td>
+<td width="25%" align="left">controller_simulink_P.c_along_pos_max_P_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2887:31')" name="code2model" class="code2model">&lt;S44&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_dz</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2884')" name="code2model" class="code2model">&lt;S12&gt;/Gain3</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain3_Gain_k</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2797')" name="code2model" class="code2model">&lt;S8&gt;/is_on</a></td>
+<td width="25%" align="left">controller_simulink_P.is_on_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2795')" name="code2model" class="code2model">&lt;S8&gt;/is_N_impulses</a></td>
+<td width="25%" align="left">controller_simulink_P.is_N_impulses_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2794')" name="code2model" class="code2model">&lt;S8&gt;/is_A</a></td>
+<td width="25%" align="left">controller_simulink_P.is_A_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">[2  5]</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2796')" name="code2model" class="code2model">&lt;S8&gt;/is_N_r</a></td>
+<td width="25%" align="left">controller_simulink_P.is_N_r_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">[2  5]</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2758')" name="code2model" class="code2model">&lt;S7&gt;/Discrete Transfer Fcn</a></td>
+<td width="25%" align="left">controller_simulink_P.DiscreteTransferFcn_InitialStat</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2758')" name="code2model" class="code2model">&lt;S7&gt;/Discrete Transfer Fcn</a></td>
+<td width="25%" align="left">controller_simulink_P.DiscreteTransferFcn_NumCoef</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">[1  2]</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2758')" name="code2model" class="code2model">&lt;S7&gt;/Discrete Transfer Fcn</a></td>
+<td width="25%" align="left">controller_simulink_P.DiscreteTransferFcn_DenCoef</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">[1  2]</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2753')" name="code2model" class="code2model">&lt;S7&gt;/Cosine</a></td>
+<td width="25%" align="left">controller_simulink_P.Cosine_Amp</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2753')" name="code2model" class="code2model">&lt;S7&gt;/Cosine</a></td>
+<td width="25%" align="left">controller_simulink_P.Cosine_Bias</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2753')" name="code2model" class="code2model">&lt;S7&gt;/Cosine</a></td>
+<td width="25%" align="left">controller_simulink_P.Cosine_Freq</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2753')" name="code2model" class="code2model">&lt;S7&gt;/Cosine</a></td>
+<td width="25%" align="left">controller_simulink_P.Cosine_Phase</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2827')" name="code2model" class="code2model">&lt;S10&gt;/Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain_Gain_g</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2923')" name="code2model" class="code2model">&lt;S15&gt;/Gain9</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain9_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2828')" name="code2model" class="code2model">&lt;S10&gt;/Gain1</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain1_Gain_f</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2826')" name="code2model" class="code2model">&lt;S10&gt;/Discrete Transfer Fcn</a></td>
+<td width="25%" align="left">controller_simulink_P.DiscreteTransferFcn_InitialSt_o</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2826')" name="code2model" class="code2model">&lt;S10&gt;/Discrete Transfer Fcn</a></td>
+<td width="25%" align="left">controller_simulink_P.DiscreteTransferFcn_NumCoef_g</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">[1  2]</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2826')" name="code2model" class="code2model">&lt;S10&gt;/Discrete Transfer Fcn</a></td>
+<td width="25%" align="left">controller_simulink_P.DiscreteTransferFcn_DenCoef_i</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">[1  2]</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2829')" name="code2model" class="code2model">&lt;S10&gt;/Gain2</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain2_Gain_m</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2834')" name="code2model" class="code2model">&lt;S10&gt;/c_cross_rate_K_P</a></td>
+<td width="25%" align="left">controller_simulink_P.c_cross_rate_K_P_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2839:31')" name="code2model" class="code2model">&lt;S30&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_c</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2833')" name="code2model" class="code2model">&lt;S10&gt;/c_cross_rate_K_D</a></td>
+<td width="25%" align="left">controller_simulink_P.c_cross_rate_K_D_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2838:31')" name="code2model" class="code2model">&lt;S29&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_oo</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2836')" name="code2model" class="code2model">&lt;S10&gt;/c_cross_rate_max_P</a></td>
+<td width="25%" align="left">controller_simulink_P.c_cross_rate_max_P_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2841:31')" name="code2model" class="code2model">&lt;S32&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_g</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2835')" name="code2model" class="code2model">&lt;S10&gt;/c_cross_rate_max_D</a></td>
+<td width="25%" align="left">controller_simulink_P.c_cross_rate_max_D_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2840:31')" name="code2model" class="code2model">&lt;S31&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_mf</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2837')" name="code2model" class="code2model">&lt;S10&gt;/c_cross_rate_max_PD</a></td>
+<td width="25%" align="left">controller_simulink_P.c_cross_rate_max_PD_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2842:31')" name="code2model" class="code2model">&lt;S33&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_m5</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2830')" name="code2model" class="code2model">&lt;S10&gt;/Gain3</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain3_Gain_b</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2754')" name="code2model" class="code2model">&lt;S7&gt;/Cosine1</a></td>
+<td width="25%" align="left">controller_simulink_P.Cosine1_Amp</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2754')" name="code2model" class="code2model">&lt;S7&gt;/Cosine1</a></td>
+<td width="25%" align="left">controller_simulink_P.Cosine1_Bias</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2754')" name="code2model" class="code2model">&lt;S7&gt;/Cosine1</a></td>
+<td width="25%" align="left">controller_simulink_P.Cosine1_Freq</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2754')" name="code2model" class="code2model">&lt;S7&gt;/Cosine1</a></td>
+<td width="25%" align="left">controller_simulink_P.Cosine1_Phase</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2759')" name="code2model" class="code2model">&lt;S7&gt;/Discrete Transfer Fcn1</a></td>
+<td width="25%" align="left">controller_simulink_P.DiscreteTransferFcn1_InitialSta</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2759')" name="code2model" class="code2model">&lt;S7&gt;/Discrete Transfer Fcn1</a></td>
+<td width="25%" align="left">controller_simulink_P.DiscreteTransferFcn1_NumCoef</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">[1  2]</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2759')" name="code2model" class="code2model">&lt;S7&gt;/Discrete Transfer Fcn1</a></td>
+<td width="25%" align="left">controller_simulink_P.DiscreteTransferFcn1_DenCoef</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">[1  2]</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2805')" name="code2model" class="code2model">&lt;S9&gt;/Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain_Gain_lx</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2922')" name="code2model" class="code2model">&lt;S15&gt;/Gain8</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain8_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2806')" name="code2model" class="code2model">&lt;S9&gt;/Gain1</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain1_Gain_b</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2804')" name="code2model" class="code2model">&lt;S9&gt;/Discrete Transfer Fcn</a></td>
+<td width="25%" align="left">controller_simulink_P.DiscreteTransferFcn_InitialSt_e</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2804')" name="code2model" class="code2model">&lt;S9&gt;/Discrete Transfer Fcn</a></td>
+<td width="25%" align="left">controller_simulink_P.DiscreteTransferFcn_NumCoef_d</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">[1  2]</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2804')" name="code2model" class="code2model">&lt;S9&gt;/Discrete Transfer Fcn</a></td>
+<td width="25%" align="left">controller_simulink_P.DiscreteTransferFcn_DenCoef_p</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">[1  2]</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2807')" name="code2model" class="code2model">&lt;S9&gt;/Gain2</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain2_Gain_l</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2817')" name="code2model" class="code2model">&lt;S9&gt;/c_along_rate_K_P</a></td>
+<td width="25%" align="left">controller_simulink_P.c_along_rate_K_P_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2812:31')" name="code2model" class="code2model">&lt;S24&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_f</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2816')" name="code2model" class="code2model">&lt;S9&gt;/c_along_rate_K_D</a></td>
+<td width="25%" align="left">controller_simulink_P.c_along_rate_K_D_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2811:31')" name="code2model" class="code2model">&lt;S23&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_eb</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2819')" name="code2model" class="code2model">&lt;S9&gt;/c_along_rate_max_P</a></td>
+<td width="25%" align="left">controller_simulink_P.c_along_rate_max_P_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2814:31')" name="code2model" class="code2model">&lt;S26&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_a</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2818')" name="code2model" class="code2model">&lt;S9&gt;/c_along_rate_max_D</a></td>
+<td width="25%" align="left">controller_simulink_P.c_along_rate_max_D_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2813:31')" name="code2model" class="code2model">&lt;S25&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_p</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2820')" name="code2model" class="code2model">&lt;S9&gt;/c_along_rate_max_PD</a></td>
+<td width="25%" align="left">controller_simulink_P.c_along_rate_max_PD_Value</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2815:31')" name="code2model" class="code2model">&lt;S27&gt;/Slider Gain</a></td>
+<td width="25%" align="left">controller_simulink_P.SliderGain_Gain_i</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2808')" name="code2model" class="code2model">&lt;S9&gt;/Gain3</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain3_Gain_h</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2901')" name="code2model" class="code2model">&lt;S4&gt;/RadToDeg</a></td>
+<td width="25%" align="left">controller_simulink_P.RadToDeg_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2902')" name="code2model" class="code2model">&lt;S4&gt;/RadToDeg1</a></td>
+<td width="25%" align="left">controller_simulink_P.RadToDeg1_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2920')" name="code2model" class="code2model">&lt;S15&gt;/Gain6</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain6_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2903')" name="code2model" class="code2model">&lt;S4&gt;/RadToDeg2</a></td>
+<td width="25%" align="left">controller_simulink_P.RadToDeg2_Gain</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2786')" name="code2model" class="code2model">&lt;S4&gt;/Gain4</a></td>
+<td width="25%" align="left">controller_simulink_P.Gain4_Gain_c</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">1</td>
+</tr>
+<tr class="even"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2482')" name="code2model" class="code2model">&lt;S19&gt;/Data Store Memory</a></td>
+<td width="25%" align="left">controller_simulink_P.DataStoreMemory_InitialValue</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">[2  30]</td>
+</tr>
+<tr class="odd"><td width="40%" align="left"><a href="matlab:rtwprivate('code2model','controller_simulink:2790')" name="code2model" class="code2model">&lt;S8&gt;/Data Store Memory</a></td>
+<td width="25%" align="left">controller_simulink_P.DataStoreMemory_InitialValue_d</td>
+<td width="25%" align="left">real_T</td>
+<td width="10%" align="right">[2  200]</td>
+</tr>
+</table>
+<h3><a name="sec_Data_Stores">Data Stores</a>
+</h3>
+<p align="left">No data stores in the model; note that this report lists only data stores with non-auto storage class and global data stores</p>
+</body>
+</html>

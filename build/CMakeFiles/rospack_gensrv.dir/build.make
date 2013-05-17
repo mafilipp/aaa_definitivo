@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo
+CMAKE_SOURCE_DIR = /home/mafilipp/fuerte_workspace/sandbox/sl_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build
+CMAKE_BINARY_DIR = /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build
 
 # Utility rule file for rospack_gensrv.
 
@@ -57,6 +57,6 @@ CMakeFiles/rospack_gensrv.dir/clean:
 .PHONY : CMakeFiles/rospack_gensrv.dir/clean
 
 CMakeFiles/rospack_gensrv.dir/depend:
-	cd /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles/rospack_gensrv.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mafilipp/fuerte_workspace/sandbox/sl_controller /home/mafilipp/fuerte_workspace/sandbox/sl_controller /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles/rospack_gensrv.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rospack_gensrv.dir/depend
 

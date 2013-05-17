@@ -14,25 +14,19 @@ set(ROS_BUILD_TYPE RelWithDebInfo)
 
 rosbuild_init()
 
-set(MATLAB_ROOT /usr/local/MATLAB/R2012a)
-set(SIMULINK_OUTPUT_DIR /home/mafilipp/Dropbox/MATLAB/aaa_definitivo/simulink_model_grt_rtw)
+#set(MATLAB_ROOT /usr/local/MATLAB/R2012a)
+#set(SIMULINK_OUTPUT_DIR /home/mafilipp/fuerte_workspace/sandbox/sl_controller/include/z_controller_const_ert_rtw)
+set(SIMULINK_OUTPUT_DIR /home/mafilipp/fuerte_workspace/sandbox/sl_controller/include/controller_simulink_ert_rtw)
 
 #set the default path for built executables to the "bin" directory
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+SET(SimulinkModel_SOURCES src/SimulinkModel.cpp src/dynamic_reconfigure.cpp)
 #set the default path for built libraries to the "lib" directory
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 include_directories(${PROJECT_SOURCE_DIR}/include
-	${SIMULINK_OUTPUT_DIR}
-	${MATLAB_ROOT}/simulink/include
-	${MATLAB_ROOT}/extern/include
-	${MATLAB_ROOT}/rtw/c/src
-	${MATLAB_ROOT}/rtw/c/src/ext_mode/common)
-
-
- 
-
-
+	${SIMULINK_OUTPUT_DIR})
+	
 
 
 
@@ -44,43 +38,16 @@ rosbuild_genmsg() #modificato
 #uncomment if you have defined services
 #rosbuild_gensrv()
 
-rosbuild_add_executable(aaa_definitivo src/SimulinkModel.cpp)
-target_link_libraries(aaa_definitivo -lsimulink_model)
+rosbuild_add_executable(sl_controller ${SimulinkModel_SOURCES})
+#rosbuild_add_executable(sl_controller src/SimulinkModel.cpp)
+#target_link_libraries(sl_controller -lz_controller_const)
+target_link_libraries(sl_controller -lcontroller_simulink)
 
 #target_link_libraries(simulink_model ${PROJECT_NAME})
 
 
 
-SET(
-  CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake
-)
-include(cmake/FindMAVLINK.cmake)
-include(cmake/FindGLIB2.cmake)
-include(cmake/FindGTHREAD2.cmake)
-
-FIND_PACKAGE(MAVLINK  REQUIRED)
-FIND_PACKAGE(GLIB2  REQUIRED)
-FIND_PACKAGE(GTHREAD2  REQUIRED)
-
-# On mac use clang++
-IF(${CMAKE_SYSTEM} MATCHES "Darwin-11.*")
-    # Use clang++
-    set(CMAKE_CXX_COMPILER /usr/bin/clang++)
-    # Use clang
-    set(CMAKE_C_COMPILER /usr/bin/clang)
-ENDIF(${CMAKE_SYSTEM} MATCHES "Darwin-11.*")
-
-
-INCLUDE_DIRECTORIES(
-  ${MAVLINK_INCLUDE_DIR}
-  ${GLIB2_MAIN_INCLUDE_DIR}
-  ${GLIB2_INTERNAL_INCLUDE_DIR}
-  ${GTHREAD2_MAIN_INCLUDE_DIR}
-  ../include/
-)
-
-
-target_link_libraries(mavlink_ros_serial
-  ${GLIB2_LIBRARY}
-  ${GTHREAD2_LIBRARY}
-)
+#add dynamic reconfigure api
+rosbuild_find_ros_package(dynamic_reconfigure)
+include(${dynamic_reconfigure_PACKAGE_PATH}/cmake/cfgbuild.cmake)
+gencfg()

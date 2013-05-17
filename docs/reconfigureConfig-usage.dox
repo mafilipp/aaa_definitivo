@@ -1,0 +1,48 @@
+\subsubsection usage Usage
+\verbatim
+<node name="sl_controller" pkg="sl_controller" type="sl_controller">
+  <param name="Supply_type" type="int" value="0" />
+  <param name="Load_0_200" type="double" value="0.0" />
+  <param name="Frequency" type="double" value="30.0" />
+  <param name="init_PID" type="bool" value="False" />
+  <param name="load_param" type="bool" value="False" />
+  <param name="use_param" type="bool" value="False" />
+  <param name="thrust_K_P" type="double" value="100.0" />
+  <param name="thrust_K_I" type="double" value="10.0" />
+  <param name="thrust_K_D" type="double" value="50.0" />
+  <param name="thrust_max_P" type="double" value="30.0" />
+  <param name="thrust_max_I" type="double" value="30.0" />
+  <param name="thrust_max_D" type="double" value="40.0" />
+  <param name="thrust_max_PID" type="double" value="200.0" />
+  <param name="cross_pos_K_P" type="double" value="0.6" />
+  <param name="cross_pos_max_P" type="double" value="0.8" />
+  <param name="cross_rate_K_P" type="double" value="0.2" />
+  <param name="cross_rate_K_D" type="double" value="0.0" />
+  <param name="cross_rate_max_P" type="double" value="0.2" />
+  <param name="cross_rate_max_D" type="double" value="0.2" />
+  <param name="cross_rate_max_PD" type="double" value="0.2" />
+  <param name="along_pos_K_P" type="double" value="0.6" />
+  <param name="along_pos_max_P" type="double" value="0.8" />
+  <param name="along_rate_K_P" type="double" value="0.2" />
+  <param name="along_rate_K_D" type="double" value="0.0" />
+  <param name="along_rate_max_P" type="double" value="0.2" />
+  <param name="along_rate_max_D" type="double" value="0.2" />
+  <param name="along_rate_max_PD" type="double" value="0.2" />
+  <param name="N_Delay" type="int" value="3" />
+  <param name="G_d" type="double" value="0.0" />
+  <param name="l_L" type="double" value="0.6" />
+  <param name="df_sign_ct" type="double" value="1.0" />
+  <param name="df_sign_at" type="double" value="1.0" />
+  <param name="is_on" type="int" value="0" />
+  <param name="is_N_impulses" type="int" value="2" />
+  <param name="is_omega_ct" type="double" value="0.5" />
+  <param name="is_omega_at" type="double" value="0.5" />
+  <param name="is_zeta_ct" type="double" value="0.1" />
+  <param name="is_zeta_at" type="double" value="0.1" />
+  <param name="test1" type="double" value="0.0" />
+  <param name="test2" type="double" value="0.0" />
+  <param name="test3" type="double" value="0.0" />
+  <param name="init_coordinate" type="bool" value="False" />
+</node>
+\endverbatim
+

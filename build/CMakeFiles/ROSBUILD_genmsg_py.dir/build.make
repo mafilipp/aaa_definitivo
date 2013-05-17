@@ -32,72 +32,208 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo
+CMAKE_SOURCE_DIR = /home/mafilipp/fuerte_workspace/sandbox/sl_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build
+CMAKE_BINARY_DIR = /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build
 
 # Utility rule file for ROSBUILD_genmsg_py.
 
 # Include the progress variables for this target.
 include CMakeFiles/ROSBUILD_genmsg_py.dir/progress.make
 
-CMakeFiles/ROSBUILD_genmsg_py: ../src/aaa_definitivo/msg/__init__.py
+CMakeFiles/ROSBUILD_genmsg_py: ../src/sl_controller/msg/__init__.py
 
-../src/aaa_definitivo/msg/__init__.py: ../src/aaa_definitivo/msg/_DoubleArrayStamped.py
-../src/aaa_definitivo/msg/__init__.py: ../src/aaa_definitivo/msg/_waypoint.py
-../src/aaa_definitivo/msg/__init__.py: ../src/aaa_definitivo/msg/_controller_out.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/aaa_definitivo/msg/__init__.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/msg/DoubleArrayStamped.msg /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/msg/waypoint.msg /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/msg/controller_out.msg
+../src/sl_controller/msg/__init__.py: ../src/sl_controller/msg/_psi_debugging.py
+../src/sl_controller/msg/__init__.py: ../src/sl_controller/msg/_output.py
+../src/sl_controller/msg/__init__.py: ../src/sl_controller/msg/_ext_state.py
+../src/sl_controller/msg/__init__.py: ../src/sl_controller/msg/_waypoint.py
+../src/sl_controller/msg/__init__.py: ../src/sl_controller/msg/_AngleMeasStamped.py
+../src/sl_controller/msg/__init__.py: ../src/sl_controller/msg/_control_message.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/sl_controller/msg/__init__.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --initpy /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/psi_debugging.msg /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/output.msg /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/ext_state.msg /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/waypoint.msg /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/AngleMeasStamped.msg /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/control_message.msg
 
-../src/aaa_definitivo/msg/_DoubleArrayStamped.py: ../msg/DoubleArrayStamped.msg
-../src/aaa_definitivo/msg/_DoubleArrayStamped.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/aaa_definitivo/msg/_DoubleArrayStamped.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/aaa_definitivo/msg/_DoubleArrayStamped.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
-../src/aaa_definitivo/msg/_DoubleArrayStamped.py: ../manifest.xml
-../src/aaa_definitivo/msg/_DoubleArrayStamped.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../src/aaa_definitivo/msg/_DoubleArrayStamped.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../src/aaa_definitivo/msg/_DoubleArrayStamped.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/aaa_definitivo/msg/_DoubleArrayStamped.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-../src/aaa_definitivo/msg/_DoubleArrayStamped.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/aaa_definitivo/msg/_DoubleArrayStamped.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/msg/DoubleArrayStamped.msg
+../src/sl_controller/msg/_psi_debugging.py: ../msg/psi_debugging.msg
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../src/sl_controller/msg/_psi_debugging.py: ../manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/rospy/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/rostest/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/roswtf/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/message_filters/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/share/rosservice/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../src/sl_controller/msg/_psi_debugging.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/sl_controller/msg/_psi_debugging.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/psi_debugging.msg
 
-../src/aaa_definitivo/msg/_waypoint.py: ../msg/waypoint.msg
-../src/aaa_definitivo/msg/_waypoint.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/aaa_definitivo/msg/_waypoint.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/aaa_definitivo/msg/_waypoint.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
-../src/aaa_definitivo/msg/_waypoint.py: ../manifest.xml
-../src/aaa_definitivo/msg/_waypoint.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../src/aaa_definitivo/msg/_waypoint.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../src/aaa_definitivo/msg/_waypoint.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/aaa_definitivo/msg/_waypoint.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-../src/aaa_definitivo/msg/_waypoint.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/aaa_definitivo/msg/_waypoint.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/msg/waypoint.msg
+../src/sl_controller/msg/_output.py: ../msg/output.msg
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../src/sl_controller/msg/_output.py: ../manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/rospy/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/rostest/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/roswtf/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/message_filters/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/share/rosservice/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../src/sl_controller/msg/_output.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/sl_controller/msg/_output.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/output.msg
 
-../src/aaa_definitivo/msg/_controller_out.py: ../msg/controller_out.msg
-../src/aaa_definitivo/msg/_controller_out.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
-../src/aaa_definitivo/msg/_controller_out.py: /opt/ros/fuerte/share/roslib/bin/gendeps
-../src/aaa_definitivo/msg/_controller_out.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
-../src/aaa_definitivo/msg/_controller_out.py: ../manifest.xml
-../src/aaa_definitivo/msg/_controller_out.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
-../src/aaa_definitivo/msg/_controller_out.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
-../src/aaa_definitivo/msg/_controller_out.py: /opt/ros/fuerte/share/roslang/manifest.xml
-../src/aaa_definitivo/msg/_controller_out.py: /opt/ros/fuerte/share/roscpp/manifest.xml
-../src/aaa_definitivo/msg/_controller_out.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/aaa_definitivo/msg/_controller_out.py"
-	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/msg/controller_out.msg
+../src/sl_controller/msg/_ext_state.py: ../msg/ext_state.msg
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/geometry_msgs/msg/Pose.msg
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/geometry_msgs/msg/Quaternion.msg
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/geometry_msgs/msg/Point.msg
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/geometry_msgs/msg/Vector3.msg
+../src/sl_controller/msg/_ext_state.py: ../manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/rospy/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/rostest/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/roswtf/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/message_filters/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/share/rosservice/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../src/sl_controller/msg/_ext_state.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/sl_controller/msg/_ext_state.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/ext_state.msg
+
+../src/sl_controller/msg/_waypoint.py: ../msg/waypoint.msg
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../src/sl_controller/msg/_waypoint.py: ../manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/rospy/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/rostest/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/roswtf/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/message_filters/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/share/rosservice/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../src/sl_controller/msg/_waypoint.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/sl_controller/msg/_waypoint.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/waypoint.msg
+
+../src/sl_controller/msg/_AngleMeasStamped.py: ../msg/AngleMeasStamped.msg
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../src/sl_controller/msg/_AngleMeasStamped.py: ../manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/rospy/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/rostest/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/roswtf/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/message_filters/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/share/rosservice/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../src/sl_controller/msg/_AngleMeasStamped.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/sl_controller/msg/_AngleMeasStamped.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/AngleMeasStamped.msg
+
+../src/sl_controller/msg/_control_message.py: ../msg/control_message.msg
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/roslib/bin/gendeps
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/std_msgs/msg/Header.msg
+../src/sl_controller/msg/_control_message.py: ../manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/roslang/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/roscpp/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/rospy/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/rostest/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/roswtf/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/message_filters/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/share/rosservice/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/manifest.xml
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/msg_gen/generated
+../src/sl_controller/msg/_control_message.py: /opt/ros/fuerte/stacks/dynamic_reconfigure/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/sl_controller/msg/_control_message.py"
+	/opt/ros/fuerte/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /home/mafilipp/fuerte_workspace/sandbox/sl_controller/msg/control_message.msg
 
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py
-ROSBUILD_genmsg_py: ../src/aaa_definitivo/msg/__init__.py
-ROSBUILD_genmsg_py: ../src/aaa_definitivo/msg/_DoubleArrayStamped.py
-ROSBUILD_genmsg_py: ../src/aaa_definitivo/msg/_waypoint.py
-ROSBUILD_genmsg_py: ../src/aaa_definitivo/msg/_controller_out.py
+ROSBUILD_genmsg_py: ../src/sl_controller/msg/__init__.py
+ROSBUILD_genmsg_py: ../src/sl_controller/msg/_psi_debugging.py
+ROSBUILD_genmsg_py: ../src/sl_controller/msg/_output.py
+ROSBUILD_genmsg_py: ../src/sl_controller/msg/_ext_state.py
+ROSBUILD_genmsg_py: ../src/sl_controller/msg/_waypoint.py
+ROSBUILD_genmsg_py: ../src/sl_controller/msg/_AngleMeasStamped.py
+ROSBUILD_genmsg_py: ../src/sl_controller/msg/_control_message.py
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py.dir/build.make
 .PHONY : ROSBUILD_genmsg_py
 
@@ -110,6 +246,6 @@ CMakeFiles/ROSBUILD_genmsg_py.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_genmsg_py.dir/clean
 
 CMakeFiles/ROSBUILD_genmsg_py.dir/depend:
-	cd /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build /home/mafilipp/fuerte_workspace/sandbox/aaa_definitivo/build/CMakeFiles/ROSBUILD_genmsg_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mafilipp/fuerte_workspace/sandbox/sl_controller /home/mafilipp/fuerte_workspace/sandbox/sl_controller /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build /home/mafilipp/fuerte_workspace/sandbox/sl_controller/build/CMakeFiles/ROSBUILD_genmsg_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_genmsg_py.dir/depend
 
